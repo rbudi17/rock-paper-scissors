@@ -12,3 +12,20 @@ function getComputerChoice() {
 
   return computerChoice;
 }
+
+function getHumanChoice() {
+  let humanChoice = prompt('Hint: "rock", "paper", "scissors"');
+  let result = "";
+
+  if (humanChoice === "rock") {
+    result = "rock";
+  } else if (humanChoice === "paper") {
+    result = "paper";
+  } else if (humanChoice === "scissors") {
+    result = "scissors";
+  } else {
+    result = "Wrong keyword ❌ \br Hint: 'rock', 'paper', 'scissors'";
+  }
+
+  return result;
+}
